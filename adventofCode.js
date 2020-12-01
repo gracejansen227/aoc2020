@@ -201,37 +201,34 @@ const puzzleInput = [1511,
 1652,
 1901];
 
-function findTwoNumbers(array){
+function findTwoNumbers(array, shitYear){
     let product = 0;
 
     for (let i = 0; i < array.length; i++) {
         for ( let x = 0; x < array.length; x++){
-            if (array[i] !== array[x]) {
-                if (array[i] + array[x] == 2020){
+                if (array[i] + array[x] == shitYear){
                 
                     product = array[i]*array[x];
                     break;
                 }
-          
-            }
         }
     }
     return product;
 
 }
-console.log(findTwoNumbers(puzzleInput));
+console.log(findTwoNumbers(puzzleInput, 2020));
 
 // Day 1 - 2 Start
 
 
-function findThreeNumbers(array){
+function findThreeNumbers(array, shitYear){
     let product = 0;
 
     for (let i = 0; i < array.length; i++) {
         for ( let x = 0; x < array.length; x++){
             for ( let j = 0; j < array.length; j++){
                 if (array[i] !== array[x] && array[x] !== array[j] && array[i] !== array[j]) {
-                    if (array[i] + array[x] + array[j] == 2020){
+                    if (array[i] + array[x] + array[j] == shitYear){
                     
                         product = array[i]*array[x]*array[j];
                         break;
@@ -243,4 +240,4 @@ function findThreeNumbers(array){
     return product;
 
 }
-console.log(findThreeNumbers(puzzleInput));
+console.log(findThreeNumbers(puzzleInput, 2020));
