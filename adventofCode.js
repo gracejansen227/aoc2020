@@ -224,3 +224,23 @@ console.log(findTwoNumbers(puzzleInput));
 // Day 1 - 2 Start
 
 
+function findThreeNumbers(array){
+    let product = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        for ( let x = 0; x < array.length; x++){
+            for ( let j = 0; j < array.length; j++){
+                if (array[i] !== array[x] && array[x] !== array[j] && array[i] !== array[j]) {
+                    if (array[i] + array[x] + array[j] == 2020){
+                    
+                        product = array[i]*array[x]*array[j];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    return product;
+
+}
+console.log(findThreeNumbers(puzzleInput));
