@@ -14,8 +14,6 @@ const expandedMap = inputArray.map(row => {
     return row.repeat(300)
 });
 
-const rate = 3;
-
 function findTreesHit(array,ratex, ratey) {
     let trackedSpots = [];
     const y_rate = ratey != null ? ratey : 1;
