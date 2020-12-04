@@ -71,9 +71,9 @@ function findValidPassports(rawInput){
 }
 
 function formatInputToObject(rawInput){
-    return rawInput.split("\n\n").map(parse);
+    return rawInput.split("\n\n").map(splitData);
 
-    function parse(input){
+    function splitData(input){
         return input.split(/\s/).map( p => p.split(":"));
     }
 
