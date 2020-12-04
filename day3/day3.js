@@ -44,7 +44,6 @@ console.log(findTreesHit(expandedMap,3));
 console.log(findTreesHit(expandedMap,3));
 console.log(findTreesHit(expandedMap,3));
 console.log(findTreesHit(expandedMap,1, 2));
-console.log(findTreesHitY(expandedMap,1, 2));
 
 console.log("BIG OLD ANSWERS YOO-------",tree1*tree2*tree3*tree4*tree5)
 
